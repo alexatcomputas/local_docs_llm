@@ -13,7 +13,7 @@ callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
 
 template = """Question: {question}
 
-Answer: Let's think step by step on it.
+Answer: Please summarize and provide a short answer.
 
 """
 prompt = PromptTemplate(template=template, input_variables=["question"])

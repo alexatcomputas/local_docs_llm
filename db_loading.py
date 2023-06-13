@@ -80,9 +80,9 @@ Question: {question}
 Answer: Let's think step by step."""
 
 # Hardcoded question
-question = "What is a PLC and what is the difference with a PC"
+# question = "What is a PLC and what is the difference with a PC"
 # User-input question: comment the line above and uncomment the following line
-# question = input("Your question: ")
+question = input("Your question: ")
 matched_docs, sources = similarity_search(question, index)
 # Creating the context
 context = "\n".join([doc.page_content for doc in matched_docs])

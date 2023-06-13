@@ -38,7 +38,7 @@ joblib==1.2.0
 jsonschema==4.17.3
 langchain==0.0.149
 lit==16.0.5.post0
-llama-cpp-python==0.1.62
+llama-cpp-python==0.1.48
 lxml==4.9.2
 Markdown==3.4.3
 MarkupSafe==2.1.3

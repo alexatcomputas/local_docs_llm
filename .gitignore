@@ -154,6 +154,7 @@ cython_debug/
 
 # LLM's
 models/*
+my_faiss_index
 
 # Documents
 docs/*

@@ -55,7 +55,7 @@ def create_index(chunks):
 def similarity_search(query, index):
     # k is the number of similarity searched that matches the query
     # default is 4
-    matched_docs = index.similarity_search(query, k=3)
+    matched_docs = index.similarity_search(query, k=4)
     sources = []
     for doc in matched_docs:
         sources.append(
