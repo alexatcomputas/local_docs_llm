@@ -1,1 +1,1 @@
-# local_docs_llm
+# Repo for testing out an LLM for processing / querying local documents
