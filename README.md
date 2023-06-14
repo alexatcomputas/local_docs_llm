@@ -16,4 +16,6 @@ Following guide on [Medium: gpt4all-is-the-local-chatgpt-for-your-documents](htt
    > source venv/bin/activate
 4. Install requirements:
    > (venv) > pip install -r requirements.txt
-5. Run db_loading for querying documents:<br>> python3 -m db_loading <br>Ask question in interactive terminal
+5. Run db_loading for querying documents:<br>
+   > python3 -m db_loading <br>
+6. Ask question in interactive terminal
