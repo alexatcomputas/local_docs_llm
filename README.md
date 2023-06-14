@@ -15,8 +15,6 @@ Following guide on [Medium: gpt4all-is-the-local-chatgpt-for-your-documents](htt
    > source venv/bin/activate
 2. Install requirements:
    > (venv) > pip install -r requirements.txt
-   - Had to install llama-cpp-python upon first run of script my_knowledge_qna.py<br>
-      > pip install llama-cpp-python
-1. Run db_loading for querying documents:<br>
+3. Run db_loading for querying documents:<br>
    > python3 -m db_loading <br>
-2. Ask question in interactive terminal
+4. Ask question in interactive terminal
