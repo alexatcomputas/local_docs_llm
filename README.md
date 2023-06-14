@@ -1,7 +1,7 @@
 # Repo for testing out an LLM for processing / querying local documents
 ### Following guide on [Medium: gpt4all-is-the-local-chatgpt-for-your-documents](https://artificialcorner.com/gpt4all-is-the-local-chatgpt-for-your-documents-and-it-is-free-df1016bc335)
 
-### The files here are all installed and run on Linux, should also work on Mac. Windows needs some modifications to compile C binaries, see the guide for notes.
+# The files here are all installed and run on Linux, should also work on Mac. Windows needs some modifications to compile C binaries, see the original guide for notes.
 
 Download models into models directory:
 (They are quite large and are therefore gitignored)
@@ -14,3 +14,5 @@ Download models into models directory:
 
 1. python3 -m my_knowledge_qna
 2. python3 -m my_langchain
+# Run db_loading for querying documents
+3. python3 -m db_loading
