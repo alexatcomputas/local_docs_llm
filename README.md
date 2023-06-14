@@ -11,5 +11,5 @@ Following guide on [Medium: gpt4all-is-the-local-chatgpt-for-your-documents](htt
 
 - Had to pip install llama-cpp-python upon first run of > python3 my_knowledge_qna.py
 
-Run db_loading for querying documents
+#### Run db_loading for querying documents
 3. python3 -m db_loading
