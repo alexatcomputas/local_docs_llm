@@ -10,7 +10,8 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.document_loaders import DirectoryLoader, PyPDFLoader, TextLoader, UnstructuredPDFLoader
 
 # LLamaCpp embeddings from the Alpaca model
-from langchain.embeddings import LlamaCppEmbeddings
+# from langchain.embeddings import LlamaCppEmbeddings
+from langchain.embeddings import HuggingFaceEmbeddings
 
 # Vector Store Index to create our database about our knowledge
 from langchain.indexes import VectorstoreIndexCreator
@@ -24,12 +25,12 @@ from langchain.vectorstores.faiss import FAISS
 
 # assign the path for the 2 models GPT4All and Alpaca for the embeddings
 gpt4all_path = "./models/gpt4all-converted.bin"
-llama_path = "./models/ggml-model-q4_0.bin"
+## REMOVED ## llama_path = './models/ggml-model-q4_0.bin'
 # Calback manager for handling the calls with  the model
 callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
 
-# create the embedding object
-embeddings = LlamaCppEmbeddings(model_path=llama_path)
+## REMOVED ## embeddings = LlamaCppEmbeddings(model_path=llama_path)
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 # create the GPT4All llm object
 llm = GPT4All(model=gpt4all_path, callback_manager=callback_manager, verbose=True)
 
@@ -50,6 +51,11 @@ def create_index(chunks):
     search_index = FAISS.from_texts(texts, embeddings, metadatas=metadatas)
 
     return search_index
+
+
+# DEV TESTING
+os.environ["PYDEVD_WARN_EVALUATION_TIMEOUT"] = "10"
+# /DEV TESTING
 
 
 def similarity_search(query, index):
