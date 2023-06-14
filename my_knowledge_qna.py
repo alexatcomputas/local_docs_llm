@@ -9,7 +9,7 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 # function for loading only TXT files
 from langchain.document_loaders import DirectoryLoader, PyPDFLoader, TextLoader, UnstructuredPDFLoader
 
-# LLamaCpp embeddings from the Alpaca model
+# Using huggingfaceembeddings instead:
 from langchain.embeddings import HuggingFaceEmbeddings, LlamaCppEmbeddings
 
 # Vector Store Index to create our database about our knowledge
@@ -21,6 +21,10 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # FAISS  library for similaarity search
 from langchain.vectorstores.faiss import FAISS
+
+# LLamaCpp embeddings from the Alpaca model
+# from langchain.embeddings import LlamaCppEmbeddings
+
 
 # assign the path for the 2 models GPT4All and Alpaca for the embeddings
 gpt4all_path = "./models/gpt4all-converted.bin"
