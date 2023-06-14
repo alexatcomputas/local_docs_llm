@@ -158,3 +158,6 @@ my_faiss_index
 
 # Documents
 docs/*
+
+# VSCode
+.vscode
