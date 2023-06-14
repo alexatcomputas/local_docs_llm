@@ -2,8 +2,8 @@
 Following guide on [Medium: gpt4all-is-the-local-chatgpt-for-your-documents](https://artificialcorner.com/gpt4all-is-the-local-chatgpt-for-your-documents-and-it-is-free-df1016bc335)
 - Original Guide GH repo: [github/fabiomatricardi](https://github.com/fabiomatricardi/GPT4All_Medium)
 
-## The files here are all installed and run on Linux:penguin:, should also work on Mac:green_apple:. Windows needs some modifications to compile C binaries, see the original guide for notes.
-1. Add pdf documents to the docs folder to use as basis for query knowledge base
+### Installed and run on Linux:penguin:, should also work on Mac:green_apple:. Windows needs some modifications to compile C binaries, see the original guide for notes.
+1. Add pdf documents to the docs folder to use as knowledge base
 
 2. Download models into models directory:
    1. [gpt4all-converted.bin](https://huggingface.co/mrgaang/aira/blob/main/gpt4all-converted.bin)
